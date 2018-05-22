@@ -39,7 +39,7 @@ layout: default
             {% for speaker in site.data.keynotes %}
             <div class='speaker col-md-6'>
 
-              <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">
+              <a href='#' class='read-more' data-toggle="modal" data-target="#{{ speaker.name | slugify }}">
                 <img class='img-responsive small-image' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg" />
               </a>
               <div class='speaker-info'>
@@ -50,10 +50,10 @@ layout: default
               </div>
               <p class='excerpt'>
               {{ speaker.description | truncatewords: 25 }}
-              <a href='#' class='read-more' data-toggle="modal" data-target="#modal-{{ forloop.index }}">Read More</a>
+              <a href='#' class='read-more' data-toggle="modal" data-target="#{{ speaker.name | slugify }}">Read More</a>
               </p>
 
-              <div class="speaker-modal modal fade" id="modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="speaker-modal modal fade" id="{{ speaker.name | slugify }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-body">
@@ -96,7 +96,7 @@ layout: default
             {% for speaker in site.data.speakers %}
             <div class='speaker'>
               <div class='img-holder'>
-                <a href="#" data-toggle="modal" data-target="#keynote-modal-{{ forloop.index }}">
+                <a href="#" data-toggle="modal" data-target="#{{ speaker.name | slugify }}">
                   <img class='img-responsive small-image' src="/assets/images/speakers/{{ speaker.name | slugify }}.jpg"  />
                 </a>
               </div>
@@ -108,10 +108,10 @@ layout: default
               </div>
               <p class='excerpt'>
               {{ speaker.description | truncatewords: 25 }}
-              <a href='#' class='read-more' data-toggle="modal" data-target="#keynote-modal-{{ forloop.index }}">Read More</a>
+              <a href='#' class='read-more' data-toggle="modal" data-target="#{{ speaker.name | slugify }}">Read More</a>
               </p>
 
-              <div class="modal fade" id="keynote-modal-{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal fade" id="{{ speaker.name | slugify }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-body">
