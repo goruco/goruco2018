@@ -22,7 +22,7 @@ $speaker-width: 15rem;
 
       @media (max-width: $breakpoint-sm) {
         display: block;
-        min-width: initial;
+        width: 100%
       }
     }
 
@@ -30,7 +30,8 @@ $speaker-width: 15rem;
       min-width: 20%;
 
       @media (max-width: $breakpoint-sm) {
-        min-width: initial;
+        display: block;
+        width: 100%
       }
     }
 
