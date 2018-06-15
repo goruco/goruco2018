@@ -80,7 +80,7 @@
   twitter: okokillgo
   title: The Twelve-Factor Function
   description: "<p>PaaS, CaaS, or FaaS? Each year brings more options for where to run a piece of code. As application developers we follow guidelines like The Twelve-Factor App to make sure our apps can run anywhere. But what about our functions? How do we make sure our functions can run anywhere?</p>
-<p>In this talk, I will migrate business logic from a javascript client to a server monolith, then to micro-services, and finally to a collection of functions running as services. In the process, I will highlight how well-known concepts like referential transparency, robustness and the interface segregation principle free us from caring where our software deploys to.</p>"
+<p>In this talk, I will introduce a way of isolating business logic so that you can easily move it from a browser to a server to a serverless function and back.</p>"
   bio: Desmond is a passionate explorer of new ideas. He likes working in software because he experiences so many different industries and perspectives. He thinks the philosophical side of what developers do is drastically under-rated and hopes to change that.
 
 - name: Sam Phippen
